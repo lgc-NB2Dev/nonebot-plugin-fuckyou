@@ -3,11 +3,11 @@
 <div align="center">
 
 <a href="https://v2.nonebot.dev/store">
-  <img src="https://raw.githubusercontent.com/A-kirami/nonebot-plugin-fuckyou/resources/nbp_logo.png" width="180" height="180" alt="NoneBotPluginLogo">
+  <img src="https://raw.githubusercontent.com/A-kirami/nonebot-plugin-template/resources/nbp_logo.png" width="180" height="180" alt="NoneBotPluginLogo">
 </a>
 
 <p>
-  <img src="https://raw.githubusercontent.com/A-kirami/nonebot-plugin-fuckyou/resources/NoneBotPlugin.svg" width="240" alt="NoneBotPluginText">
+  <img src="https://raw.githubusercontent.com/A-kirami/nonebot-plugin-template/resources/NoneBotPlugin.svg" width="240" alt="NoneBotPluginText">
 </p>
 
 # NoneBot-Plugin-FuckYou
