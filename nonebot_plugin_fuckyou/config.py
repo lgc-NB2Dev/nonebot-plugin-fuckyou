@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 
 class ConfigModel(BaseModel):
-    pass
+    fuckyou_violent: bool = False
 
 
 config: ConfigModel = ConfigModel.parse_obj(get_driver().config.dict())

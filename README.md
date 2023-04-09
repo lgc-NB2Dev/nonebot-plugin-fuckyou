@@ -3,52 +3,40 @@
 <div align="center">
 
 <a href="https://v2.nonebot.dev/store">
-  <img src="https://raw.githubusercontent.com/A-kirami/nonebot-plugin-template/resources/nbp_logo.png" width="180" height="180" alt="NoneBotPluginLogo">
+  <img src="https://raw.githubusercontent.com/A-kirami/nonebot-plugin-fuckyou/resources/nbp_logo.png" width="180" height="180" alt="NoneBotPluginLogo">
 </a>
 
 <p>
-  <img src="https://raw.githubusercontent.com/A-kirami/nonebot-plugin-template/resources/NoneBotPlugin.svg" width="240" alt="NoneBotPluginText">
+  <img src="https://raw.githubusercontent.com/A-kirami/nonebot-plugin-fuckyou/resources/NoneBotPlugin.svg" width="240" alt="NoneBotPluginText">
 </p>
 
-# nonebot-plugin-template
+# NoneBot-Plugin-FuckYou
 
-_✨ NoneBot 插件简单描述 ✨_
+_😅 你有几个 🐴，这么狂？ 😅_
 
 <a href="./LICENSE">
-  <img src="https://img.shields.io/github/license/owner/nonebot-plugin-template.svg" alt="license">
+  <img src="https://img.shields.io/github/license/lgc2333/nonebot-plugin-fuckyou.svg" alt="license">
 </a>
-<a href="https://pypi.python.org/pypi/nonebot-plugin-template">
-  <img src="https://img.shields.io/pypi/v/nonebot-plugin-template.svg" alt="pypi">
+<a href="https://pypi.python.org/pypi/nonebot-plugin-fuckyou">
+  <img src="https://img.shields.io/pypi/v/nonebot-plugin-fuckyou.svg" alt="pypi">
 </a>
 <img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="python">
-<a href="https://pypi.python.org/pypi/nonebot-plugin-template">
-  <img src="https://img.shields.io/pypi/dm/nonebot-plugin-template" alt="pypi download">
+<a href="https://pypi.python.org/pypi/nonebot-plugin-fuckyou">
+  <img src="https://img.shields.io/pypi/dm/nonebot-plugin-fuckyou" alt="pypi download">
 </a>
-<a href="https://wakatime.com/badge/user/b61b0f9a-f40b-4c82-bc51-0a75c67bfccf/project/f4778875-45a4-4688-8e1b-b8c844440abb">
-  <img src="https://wakatime.com/badge/user/b61b0f9a-f40b-4c82-bc51-0a75c67bfccf/project/f4778875-45a4-4688-8e1b-b8c844440abb.svg" alt="wakatime">
+<a href="https://wakatime.com/badge/user/b61b0f9a-f40b-4c82-bc51-0a75c67bfccf/project/fc345158-9120-4888-9a92-da01d63dc670">
+  <img src="https://wakatime.com/badge/user/b61b0f9a-f40b-4c82-bc51-0a75c67bfccf/project/fc345158-9120-4888-9a92-da01d63dc670.svg" alt="wakatime">
 </a>
 
 </div>
 
-这是一个 nonebot2 插件项目的模板库, 你可以直接使用本模板创建你的 nonebot2 插件项目的仓库
-
-模板库使用方法:
-
-1. 点击仓库中的 `Use this template` 按钮, 输入仓库名与描述, 点击 `Create repository from template` 创建仓库
-2. 全局替换 `owner` 为仓库所有者 ID;  
-   全局替换 `nonebot-plugin-template` 为插件名;  
-   全局替换 `nonebot_plugin_template` 为包名;  
-   修改 python 徽标中的版本为你插件的运行所需版本;  
-   替换 WakaTime 的徽标
-3. 修改 `README.md` 中的插件名和插件描述, 并在下方填充相应的内容
-4. 使用 `pdm` 安装工作区依赖
-   ```shell
-   pdm install -d
-   ```
-
 ## 📖 介绍
 
-这里是插件的详细介绍部分
+_10 分钟紧急开发的插件（误_
+
+NoneBot2 骂人插件，攻击性极强
+
+插件词库来源：[xiaoye12123/js](https://gitee.com/xiaoye12123/js)
 
 ## 💿 安装
 
@@ -59,7 +47,7 @@ _✨ NoneBot 插件简单描述 ✨_
 在 nonebot2 项目的根目录下打开命令行, 输入以下指令即可安装
 
 ```bash
-nb plugin install nonebot-plugin-template
+nb plugin install nonebot-plugin-fuckyou
 ```
 
 </details>
@@ -72,7 +60,7 @@ nb plugin install nonebot-plugin-template
 <summary>pip</summary>
 
 ```bash
-pip install nonebot-plugin-template
+pip install nonebot-plugin-fuckyou
 ```
 
 </details>
@@ -80,7 +68,7 @@ pip install nonebot-plugin-template
 <summary>pdm</summary>
 
 ```bash
-pdm add nonebot-plugin-template
+pdm add nonebot-plugin-fuckyou
 ```
 
 </details>
@@ -88,7 +76,7 @@ pdm add nonebot-plugin-template
 <summary>poetry</summary>
 
 ```bash
-poetry add nonebot-plugin-template
+poetry add nonebot-plugin-fuckyou
 ```
 
 </details>
@@ -96,7 +84,7 @@ poetry add nonebot-plugin-template
 <summary>conda</summary>
 
 ```bash
-conda install nonebot-plugin-template
+conda install nonebot-plugin-fuckyou
 ```
 
 </details>
@@ -107,7 +95,7 @@ conda install nonebot-plugin-template
 [tool.nonebot]
 plugins = [
     # ...
-    "nonebot_plugin_template"
+    "nonebot_plugin_fuckyou"
 ]
 ```
 
@@ -115,25 +103,17 @@ plugins = [
 
 ## ⚙️ 配置
 
-在 nonebot2 项目的`.env`文件中添加下表中的必填配置
+在 nonebot2 项目的 `.env` 文件中添加下表中的必填配置
 
-|  配置项  | 必填 | 默认值 |   说明   |
-| :------: | :--: | :----: | :------: |
-| 配置项 1 |  是  |   无   | 配置说明 |
-| 配置项 2 |  否  |   无   | 配置说明 |
+|      配置项       | 必填 | 默认值  |                             说明                             |
+| :---------------: | :--: | :-----: | :----------------------------------------------------------: |
+| `FUCKYOU_VIOLENT` |  否  | `False` | **慎用**，是否开启暴力模式，开启后攻击性极强，**后果自负**！ |
 
 ## 🎉 使用
 
-### 指令表
+直接 @Bot 对骂即可，插件为关键词检测，触发关键词可以看看 [const.py](./nonebot_plugin_fuckyou/config.py)
 
-|  指令  | 权限 | 需要@ | 范围 |   说明   |
-| :----: | :--: | :---: | :--: | :------: |
-| 指令 1 | 主人 |  否   | 私聊 | 指令说明 |
-| 指令 2 | 群员 |  是   | 群聊 | 指令说明 |
-
-### 效果图
-
-如果有效果图的话
+理论支持所有 adapter
 
 ## 📞 联系
 
@@ -144,7 +124,9 @@ Telegram：[@lgc2333](https://t.me/lgc2333)
 
 ## 💡 鸣谢
 
-如果有要鸣谢的人的话
+### [`xiaoye12123/js`](https://gitee.com/xiaoye12123/js)
+
+- 攻击性极强的回复词库来源
 
 ## 💰 赞助
 
