@@ -111,7 +111,7 @@ plugins = [
 
 ## 🎉 使用
 
-直接 @Bot 对骂即可，插件为关键词检测，触发关键词可以看看 [const.py](./nonebot_plugin_fuckyou/config.py)
+直接 @Bot 对骂即可，插件为关键词检测，触发关键词可以看看 [const.py](./nonebot_plugin_fuckyou/const.py)
 
 理论支持所有 adapter
 
