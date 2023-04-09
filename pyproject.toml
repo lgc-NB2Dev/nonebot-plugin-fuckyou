@@ -1,0 +1,71 @@
+[project]
+name = "nonebot-plugin-template"
+version = "0.1.0"
+description = "Template plugin project"
+authors = [{ name = "student_2333", email = "lgc2333@126.com" }]
+dependencies = [
+    "nonebot2>=2.0.0-rc.1",
+    "nonebot-adapter-onebot>=2.2.0",
+    "pydantic>=1.10.4",
+]
+requires-python = ">=3.8,<4.0"
+readme = "README.md"
+license = { text = "MIT" }
+
+[project.urls]
+homepage = "https://github.com/owner/nonebot-plugin-template"
+
+[project.optional-dependencies]
+dev = [
+    "pip>=23.0.1",
+    "setuptools>=67.6.1",
+    "black>=23.3.0",
+    "ruff>=0.0.260",
+    "isort>=5.12.0",
+    "nb-cli>=1.0.5",
+]
+
+[tool.pdm.build]
+includes = []
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
+
+[tool.ruff]
+extend-exclude = []
+ignore = [
+    "E501",
+    "E722",
+    "B008",
+    "TRY002",
+    "RUF001",
+    "RUF002",
+    "RUF003",
+    "RUF100",
+]
+select = [
+    "F",
+    "E",
+    "I",
+    "N",
+    "B",
+    "A",
+    "COM",
+    "C4",
+    "DTZ",
+    "ISC",
+    "PIE",
+    "PYI",
+    "Q",
+    "RSE",
+    "RET",
+    "SLF",
+    "SIM",
+    "TID",
+    "ARG",
+    "PTH",
+    "PGH",
+    "TRY",
+    "RUF",
+]
