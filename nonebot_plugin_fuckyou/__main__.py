@@ -21,14 +21,13 @@ except:
     TGMsgEv = None
 
 
-PHASES: List[str] = list(
-    *(GENTLE if config.fuckyou_gentle else []),
-    *(VIOLENT if config.fuckyou_violent else []),
+PHASES: List[str] = (GENTLE if config.fuckyou_gentle else []) + (
+    VIOLENT if config.fuckyou_violent else []
 )
 TRIGGER_WORDS: Set[str] = DEFAULT_TRIGGER_WORDS | config.fuckyou_extend_words
 
 if not PHASES:
-    raise ValueError("请至少选择一个词库")
+    raise ValueError("请至少选择一个骂人词库")
 
 
 def get_phase() -> str:
@@ -45,7 +44,7 @@ def trigger_rule(event: Event):
     except:
         return False
 
-    return any(w in msg for w in DEFAULT_TRIGGER_WORDS)
+    return any(w in msg for w in TRIGGER_WORDS)
 
 
 trigger_matcher = on_message(rule=trigger_rule)
