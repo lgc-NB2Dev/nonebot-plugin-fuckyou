@@ -1,6 +1,6 @@
-from typing import List
+from typing import List, Set
 
-TRIGGER_WORDS = [
+DEFAULT_TRIGGER_WORDS: Set[str] = {
     "傻逼",
     "你妈逼",
     "日你妈",
@@ -14,7 +14,7 @@ TRIGGER_WORDS = [
     "shabi",
     "sb",
     "我是你爹",
-]
+}
 
 GENTLE: List[str] = [
     "你一个阴间的东西，就别指望着能理解咱们阳间的话",
