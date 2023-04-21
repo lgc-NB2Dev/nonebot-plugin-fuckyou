@@ -3,7 +3,7 @@
 <div align="center">
 
 <a href="https://v2.nonebot.dev/store">
-  <img src="https://raw.githubusercontent.com/lgc2333/nonebot-plugin-fuckyou/master/readme/logo.png" width="180" height="180" alt="NoneBotPluginLogo">
+  <img src="https://media.githubusercontent.com/media/lgc-NB2Dev/readme/main/fuckyou/logo.png" width="180" height="180" alt="NoneBotPluginLogo">
 </a>
 
 <p>
