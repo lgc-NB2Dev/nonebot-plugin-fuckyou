@@ -47,7 +47,7 @@ def trigger_rule(event: Event):
     return any(w in msg for w in TRIGGER_WORDS)
 
 
-trigger_matcher = on_message(rule=trigger_rule)
+trigger_matcher = on_message(rule=trigger_rule, block=config.fuckyou_block)
 
 
 @trigger_matcher.handle()
