@@ -111,7 +111,9 @@ plugins = [
 |   `FUCKYOU_VIOLENT`    |  否  | `False` | **慎用**，是否启用攻击性极强的暴力词库，**后果自负**！ |
 |     `FUCKYOU_TOME`     |  否  | `True`  |             是否只有 @机器人 时才会骂回去              |
 | `FUCKYOU_EXTEND_WORDS` |  否  |  `[]`   |                   要额外添加的触发词                   |
-|    `FUCKYOU_BLOCK`     |  否  | `False`  |                   是否阻断 Matcher                   |
+|    `FUCKYOU_BLOCK`     |  否  | `False` |                    是否阻断 Matcher                    |
+|  `FUCKYOU_BLACKLIST`   |  否  |  `[]`   |            插件忽略的用户列表（字符串列表）            |
+|   `FUCKYOU_BL_TO_WL`   |  否  | `False` |           是否将用户黑名单翻转变为白名单判断           |
 
 ## 🎉 使用
 

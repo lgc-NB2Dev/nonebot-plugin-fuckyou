@@ -39,6 +39,12 @@ def trigger_rule(event: Event):
     if config.fuckyou_tome and (not event.is_tome()):
         return False
 
+    in_blacklist = event.get_user_id() in config.fuckyou_blacklist
+    if config.fuckyou_bl_to_wl:
+        in_blacklist = not in_blacklist
+    if in_blacklist:
+        return False
+
     try:
         msg = event.get_plaintext().lower()
     except:

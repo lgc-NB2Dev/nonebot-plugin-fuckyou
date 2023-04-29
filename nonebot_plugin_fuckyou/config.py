@@ -11,5 +11,8 @@ class ConfigModel(BaseModel):
     fuckyou_extend_words: Set[str] = set()
     fuckyou_block: bool = False
 
+    fuckyou_blacklist: Set[str] = set()
+    fuckyou_bl_to_wl: bool = False
+
 
 config: ConfigModel = ConfigModel.parse_obj(get_driver().config.dict())
