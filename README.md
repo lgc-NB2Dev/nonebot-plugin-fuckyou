@@ -38,6 +38,8 @@ NoneBot2 骂人插件，攻击性极强
 
 插件词库来源：[xiaoye12123/js](https://gitee.com/xiaoye12123/js)
 
+有更多自定义配置项的 Fork: [Dogend233/nonebot-plugin-fuckyou-reset](https://github.com/Dogend233/nonebot-plugin-fuckyou-reset)
+
 ## 💿 安装
 
 以下提到的方法 任选**其一** 即可
