@@ -11,13 +11,13 @@ from .const import DEFAULT_TRIGGER_WORDS, GENTLE, VIOLENT
 try:
     from nonebot.adapters.onebot.v11 import MessageEvent as OBV11MsgEv
     from nonebot.adapters.onebot.v12 import MessageEvent as OBV12MsgEv
-except:
+except ImportError:
     OBV11MsgEv = None
     OBV12MsgEv = None
 
 try:
     from nonebot.adapters.telegram.event import MessageEvent as TGMsgEv
-except:
+except ImportError:
     TGMsgEv = None
 
 
@@ -47,7 +47,7 @@ def trigger_rule(event: Event):
 
     try:
         msg = event.get_plaintext().lower()
-    except:
+    except Exception:
         return False
 
     return any(w in msg for w in TRIGGER_WORDS)
