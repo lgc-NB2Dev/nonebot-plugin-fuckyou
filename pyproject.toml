@@ -1,6 +1,6 @@
 [project]
 name = "nonebot-plugin-fuckyou"
-version = "0.1.4"
+dynamic = ["version"]
 description = "A NoneBot2 plugin designed for curse users"
 authors = [{ name = "student_2333", email = "lgc2333@126.com" }]
 dependencies = ["nonebot2>=2.0.0", "pydantic>=1.10.0,<2"]
@@ -14,6 +14,10 @@ homepage = "https://github.com/lgc2333/nonebot-plugin-fuckyou"
 [tool.pdm.build]
 includes = []
 
+[tool.pdm.version]
+source = "file"
+path = "nonebot_plugin_fuckyou/__init__.py"
+
 [build-system]
-requires = ["pdm-pep517>=1.0.0"]
-build-backend = "pdm.pep517.api"
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"

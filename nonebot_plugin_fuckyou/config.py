@@ -1,6 +1,6 @@
 from typing import Set
 
-from nonebot import get_driver
+from nonebot import get_plugin_config
 from pydantic import BaseModel
 
 
@@ -15,4 +15,4 @@ class ConfigModel(BaseModel):
     fuckyou_bl_to_wl: bool = False
 
 
-config: ConfigModel = ConfigModel.parse_obj(get_driver().config.dict())
+config = get_plugin_config(ConfigModel)
