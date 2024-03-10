@@ -3,7 +3,7 @@ from nonebot.plugin import PluginMetadata
 from .__main__ import get_phase
 from .config import ConfigModel
 
-__version__ = "0.2.0"
+__version__ = "0.2.0.post1"
 __plugin_meta__ = PluginMetadata(
     name="FuckYou",
     description=get_phase(),
