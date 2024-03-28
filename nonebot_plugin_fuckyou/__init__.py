@@ -1,9 +1,12 @@
-from nonebot.plugin import PluginMetadata
+from nonebot.plugin import PluginMetadata, inherit_supported_adapters, require
 
-from .__main__ import get_phase
-from .config import ConfigModel
+require("nonebot_plugin_alconna")
+require("nonebot_plugin_session")
 
-__version__ = "0.2.0.post1"
+from .__main__ import get_phase  # noqa: E402
+from .config import ConfigModel  # noqa: E402
+
+__version__ = "0.3.0"
 __plugin_meta__ = PluginMetadata(
     name="FuckYou",
     description=get_phase(),
@@ -11,6 +14,9 @@ __plugin_meta__ = PluginMetadata(
     homepage="https://github.com/lgc-NB2Dev/nonebot-plugin-fuckyou",
     type="application",
     config=ConfigModel,
-    supported_adapters=None,
+    supported_adapters=inherit_supported_adapters(
+        "nonebot_plugin_alconna",
+        "nonebot_plugin_session",
+    ),
     extra={"License": "MIT", "Author": "student_2333"},
 )
