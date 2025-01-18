@@ -2,7 +2,7 @@
 name = "nonebot-plugin-fuckyou"
 dynamic = ["version"]
 description = "A NoneBot2 plugin designed for curse users"
-authors = [{ name = "student_2333", email = "lgc2333@126.com" }]
+authors = [{ name = "LgCookie", email = "lgc2333@126.com" }]
 dependencies = [
     "nonebot2>=2.3.1",
     "nonebot-plugin-alconna>=0.48.0",
