@@ -4,9 +4,9 @@ dynamic = ["version"]
 description = "A NoneBot2 plugin designed for curse users"
 authors = [{ name = "LgCookie", email = "lgc2333@126.com" }]
 dependencies = [
-    "nonebot2>=2.3.1",
-    "nonebot-plugin-alconna>=0.48.0",
-    "nonebot-plugin-session>=0.3.1",
+    "nonebot2>=2.4.1",
+    "nonebot-plugin-alconna>=0.54.2",
+    "nonebot-plugin-session>=0.3.2",
 ]
 requires-python = ">=3.9,<4.0"
 readme = "README.md"
