@@ -1,6 +1,5 @@
 import random
-from typing import List, Set
-from typing_extensions import Annotated
+from typing import Annotated
 
 from nonebot import logger, on_message
 from nonebot.adapters import Event
@@ -10,7 +9,7 @@ from nonebot_plugin_session import SessionId, SessionIdType
 from .config import config, load_external_phase
 from .const import DEFAULT_TRIGGER_WORDS, GENTLE, VIOLENT
 
-PHASES: List[str] = [
+PHASES: list[str] = [
     *(GENTLE if config.fuckyou_use_builtin_gentle and config.fuckyou_gentle else []),
     *(VIOLENT if config.fuckyou_use_builtin_violent and config.fuckyou_violent else []),
     *(
@@ -27,7 +26,7 @@ PHASES: List[str] = [
 if not PHASES:
     raise ValueError("请至少选择一个骂人词库")
 
-TRIGGER_WORDS: Set[str] = (
+TRIGGER_WORDS: set[str] = (
     DEFAULT_TRIGGER_WORDS if config.fuckyou_use_builtin_words else set()
 ) | config.fuckyou_extend_words
 

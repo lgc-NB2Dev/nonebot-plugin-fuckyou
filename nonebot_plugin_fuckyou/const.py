@@ -1,15 +1,14 @@
 import json
 from pathlib import Path
-from typing import List, Set
 
 RESOURCE_DIR = Path(__file__).parent / "resource"
 BUILTIN_GENTLE_PATH = RESOURCE_DIR / "builtin_gentle.json"
 BUILTIN_VIOLENT_PATH = RESOURCE_DIR / "builtin_violent.json"
 
-GENTLE: List[str] = json.loads(BUILTIN_GENTLE_PATH.read_text(encoding="u8"))
-VIOLENT: List[str] = json.loads(BUILTIN_VIOLENT_PATH.read_text(encoding="u8"))
+GENTLE: list[str] = json.loads(BUILTIN_GENTLE_PATH.read_text(encoding="u8"))
+VIOLENT: list[str] = json.loads(BUILTIN_VIOLENT_PATH.read_text(encoding="u8"))
 
-DEFAULT_TRIGGER_WORDS: Set[str] = {
+DEFAULT_TRIGGER_WORDS: set[str] = {
     "傻逼",
     "你妈逼",
     "日你妈",
